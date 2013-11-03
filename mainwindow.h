@@ -36,8 +36,20 @@ public:
     ~MainWindow();
 
 private slots:
+    /**
+     * Checks if the button has been pushed
+     */
     void on_pushButton_clicked();
-
+    /**
+     * \brief Checks if the radio button is selected
+     * @param clicked
+     */
+    void radioButtonOn(bool clicked);
+    /**
+     * \brief Checks if the check button is checked
+     * @param clicked
+     */
+    void checkButton(bool clicked);
 private:
     Ui::MainWindow *ui;
 };

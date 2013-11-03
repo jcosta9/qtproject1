@@ -15,8 +15,27 @@ MainWindow::~MainWindow()
 }
 
 
+
 void MainWindow::on_pushButton_clicked()
 {
     std::cout << "pushbutton " << std::endl;
+}
+
+void MainWindow::radioButtonOn(bool clicked)
+{
+    if(clicked == false){
+        std::cout << "radiobutton Off" << std::endl;
+    }
+    else
+        std::cout << "radiobutton On" << std::endl;
+
+}
+
+void MainWindow::checkButton(bool clicked){
+    if(clicked == false){
+        std::cout << "check box Off" << std::endl;
+    }
+    else
+        std::cout << "check box On" << std::endl;
 }
 
